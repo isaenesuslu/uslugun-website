@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#header{
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(./img/gun-background.jpg);
+    background-attachment: fixed;
+    filter: saturate(3);
+    width: 100%;
+    height: 100vh;
+}
+
+#nav{
+    width: 100%;
+    height: fit-content;
+    box-shadow: 2px 2px 2px rgba(146, 146, 146, 0.151);
+}
+
+.fa-bars{
+    display: none;
+}
+
+.logo-header{
+    width: fit-content;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    filter: contrast();
+}
+
+.logo-text a{
+    font-size: 30px;
+    color: #ffffff77; 
+    letter-spacing: 7px; 
+    text-decoration: none;
+    text-shadow: 1px 2px 2px black;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #9f9f9f;
+    transition: all .3s ease-in-out;
+}
+
+.menu a:hover{
+    color: white;
+    background-color: #d843433b;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+article{
+    width: 100%;
+    height: fit-content;
+}
+
+.social li a{
+    color: #ff0f023b;
+    transition: all .3s ease-in-out;
+}
+
+.social li a:hover{
+    color: #e2e2e2f6;
+    border: 2px solid #ff0f023b;
+    padding: 0.5rem;
+}
+
+#section{
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(./img/background-2.jpg);
+    width: 100%;
+    height: fit-content;
+}
+
+.col-xl-3{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #ff0f023b;
+    color: white;
+    box-shadow: rgba(88, 88, 88, 0.4) 0px 2px 4px, rgba(110, 110, 110, 0.3) 0px 7px 13px -3px, rgba(167, 165, 165, 0.2) 0px -3px 0px inset;
+}
+
+.card-body h5{
+    letter-spacing: 10px;
+}
+
+.btn-dark:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+#footer{
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(./img/gun-background.jpg);
+    width: 100%;
+    height: fit-content;
+    background-position: center;
+    background-attachment: fixed;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+@media screen and (max-width:720px){
+    #nav ul li{
+        display: none;
+    }
+
+    .fa-bars{
+        display:block;
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+    }
+}
